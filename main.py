@@ -1,4 +1,4 @@
-from tkinter import *
+print('Welcome to TicTacToe')
 
 
 def contin():
@@ -52,7 +52,7 @@ def contin():
 
     def game():  # Game is Played
         display_board()
-        turn = 0  # k counts the number of turn initially 0
+        turn = 0  # turn counts the number of turn initially 0
 
         while True:
             x = input("X's turn. Enter your position: ")
@@ -69,7 +69,7 @@ def contin():
                 print("X won. Congratulations.")
                 break
 
-            turn += 1  # After X's turn 1 is added to k
+            turn += 1  # After X's turn 1 is added to turn
             if (
                 turn == 9
             ):  # When 9 turns are completed and still noone has won the game.
@@ -90,7 +90,7 @@ def contin():
                 print("O won. Congratulations.")
                 break
 
-            turn += 1  # Again after O's turn 1 is added to k
+            turn += 1  # Again after O's turn 1 is added to turn
 
     game()
 
